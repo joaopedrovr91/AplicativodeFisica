@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AplicativoDeFisica</string>
+    <string name="Selecao_option1">TESTE COMPLETO</string>
+    <string name="Selecao_option2">TESTE ESPECÍFICO</string>
+    <string name="regras_titulo">REGRAS DO TESTE</string>
+
+
+</resources>
