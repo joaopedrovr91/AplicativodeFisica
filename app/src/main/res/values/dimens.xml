@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_1">16sp</dimen>
+    <dimen name="text_2">12sp</dimen>
+
+    <dimen name="title_1">32sp</dimen>
+    <dimen name="title_2">24sp</dimen>
+
+    <dimen name="zero">0dp</dimen>
+    <dimen name="margin_one">1dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_big">32dp</dimen>
+    <dimen name="margin_extra_big">48dp</dimen>
+</resources>
