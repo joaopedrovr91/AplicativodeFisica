@@ -1,8 +1,16 @@
 <resources>
     <string name="app_name">AplicativoDeFisica</string>
-    <string name="Selecao_option1">TESTE COMPLETO</string>
-    <string name="Selecao_option2">TESTE ESPECÍFICO</string>
-    <string name="regras_titulo">REGRAS DO TESTE</string>
-
-
+    <string name="selection_option_1">TESTE COMPLETO</string>
+    <string name="selection_option_2">TESTE ESPECÍFICO</string>
+    <string name="rules_title">REGRAS DO TESTE</string>
+    <string name="start">START</string>
+    <string name="rules_body_rules">1- O teste tem a duração de 45min. \n \n
+        2- Cada questão tem 3 minutos para ser feita( caso não tenha marcado nenhuma opção dentro do tempo, será passado para a proxima questão). \n \n
+        3- Cada questão tem 5 alternativas ( A,B,C,D,E) apenas uma estará certa. \n \n
+        4- O Teste e composto por 15 questões. </string>
+    <string name="rules_specific_body_rules">1- O teste tem a duração de 15min. \n \n
+        2- Cada questão tem 3 minutos para ser feita( caso não tenha marcado nenhuma opção dentro do tempo, será passado para a proxima questão). \n \n
+        3- Cada questão tem 5 alternativas ( A,B,C,D,E) apenas uma estará certa. \n \n
+        4- O Teste e composto por 5 questões. </string>
+    <string name="title_specific">Selecione o conteúdo desejado</string>
 </resources>
