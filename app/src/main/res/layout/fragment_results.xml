@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/frost">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_results"
+        android:layout_width="@dimen/margin_one"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margin_start"
+        android:layout_width="@dimen/margin_one"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/margin_extra_big" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margin_end"
+        android:layout_width="@dimen/margin_one"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/margin_extra_big" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/box_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/back"
+        app:layout_constraintEnd_toEndOf="@id/margin_end"
+        app:layout_constraintStart_toStartOf="@id/margin_start"
+        app:layout_constraintTop_toTopOf="@id/guideline_results">
+
+        <TextView
+            android:id="@+id/place_hits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/results_hits"
+            android:textSize="@dimen/title_2"
+            app:layout_constraintEnd_toStartOf="@id/text_hits"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_hits"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:textSize="@dimen/title_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/place_hits"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="50%" />
+
+        <TextView
+            android:id="@+id/place_mistakes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/results_mistakes"
+            android:textSize="@dimen/title_2"
+            app:layout_constraintEnd_toStartOf="@id/text_mistakes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/place_hits" />
+
+        <TextView
+            android:id="@+id/text_mistakes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:textSize="@dimen/title_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/place_mistakes"
+            app:layout_constraintTop_toTopOf="@id/place_mistakes"
+            tools:text="70%" />
+
+        <TextView
+            android:id="@+id/motivational_phrases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_big"
+            android:text="@string/motivational_phrases"
+            android:textSize="@dimen/text_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/place_mistakes" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_extra_big"
+        android:text="@string/back"
+        android:textSize="@dimen/title_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/box_result" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

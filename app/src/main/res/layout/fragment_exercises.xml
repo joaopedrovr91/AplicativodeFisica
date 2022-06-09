@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/frost">
+
+        <TextView
+            android:id="@+id/exercises_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:text="@string/exercises_text"
+            android:textSize="@dimen/text_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/exercises_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:src="@drawable/ic_launcher_interrogation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/exercises_text" />
+
+        <Button
+            android:id="@+id/exercises_option_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_margin="@dimen/margin_small"
+            android:gravity="center"
+            android:text="@string/exercises_option_1"
+            android:textSize="@dimen/text_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/exercises_image" />
+
+        <Button
+            android:id="@+id/exercises_option_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_margin="@dimen/margin_small"
+            android:gravity="center"
+            android:text="@string/exercises_option_2"
+            android:textSize="@dimen/text_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/exercises_option_1" />
+
+        <Button
+            android:id="@+id/exercises_option_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_margin="@dimen/margin_small"
+            android:gravity="center"
+            android:text="@string/exercises_option_3"
+            android:textSize="@dimen/text_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/exercises_option_2" />
+
+        <Button
+            android:id="@+id/exercises_option_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_margin="@dimen/margin_small"
+            android:gravity="center"
+            android:text="@string/exercises_option_4"
+            android:textSize="@dimen/text_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/exercises_option_3" />
+
+        <Button
+            android:id="@+id/exercises_option_5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_margin="@dimen/margin_small"
+            android:gravity="center"
+            android:text="@string/exercises_option_5"
+            android:textSize="@dimen/text_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/exercises_option_4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
