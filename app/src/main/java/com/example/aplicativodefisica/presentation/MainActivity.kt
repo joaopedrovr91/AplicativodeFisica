@@ -1,11 +1,12 @@
-package com.example.aplicativodefisica
+package com.example.aplicativodefisica.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.aplicativodefisica.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_exercises)
+        setContentView(R.layout.activity_main)
     }
 }
