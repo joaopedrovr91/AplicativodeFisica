@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">AplicativoDeFisica</string>
-    <string name="selection_option_1">TESTE COMPLETO</string>
-    <string name="selection_option_2">TESTE ESPECÍFICO</string>
+    <string name="results_mistakes">Erros</string>
+    <string name="results_hits">Acertos</string>
+    <string name="motivational_phrases">Frases motivacionais para o usuário </string>
     <string name="rules_title">REGRAS DO TESTE</string>
+    <string name="specific_title">Selecione o conteúdo desejado</string>
     <string name="start">START</string>
+    <string name="back">Back</string>
+    <string name="exercises_text">A prova de Ciências da Natureza e suas tecnologias, na qual Física está inserida, é composta por 45 questões objetivas, com 5 alternativas de resposta em cada uma delas. \n
+        Como o total de questões é dividido pelas disciplinas de Física, Química e Biologia, caem em torno de 15 questões de cada uma delas.\n
+        Os enunciados são contextualizados e abordam com frequência assuntos ligados ao cotidiano e inovações científicas. </string>
     <string name="rules_body_rules">1- O teste tem a duração de 45min. \n \n
         2- Cada questão tem 3 minutos para ser feita( caso não tenha marcado nenhuma opção dentro do tempo, será passado para a proxima questão). \n \n
         3- Cada questão tem 5 alternativas ( A,B,C,D,E) apenas uma estará certa. \n \n
@@ -12,5 +18,19 @@
         2- Cada questão tem 3 minutos para ser feita( caso não tenha marcado nenhuma opção dentro do tempo, será passado para a proxima questão). \n \n
         3- Cada questão tem 5 alternativas ( A,B,C,D,E) apenas uma estará certa. \n \n
         4- O Teste e composto por 5 questões. </string>
-    <string name="title_specific">Selecione o conteúdo desejado</string>
+    <string name="selection_option_1">TESTE COMPLETO</string>
+    <string name="selection_option_2">TESTE ESPECÍFICO</string>
+    <string name="specific_option_1">Energia</string>
+    <string name="specific_option_2">Mecânica</string>
+    <string name="specific_option_3">Eletricidade</string>
+    <string name="specific_option_4">Óptica</string>
+    <string name="specific_option_5">Termofísica</string>
+    <string name="specific_option_6">Leis de Newton</string>
+    <string name="specific_option_7">Correntes e potência</string>
+    <string name="specific_option_8">Fenômenos ondulatórios</string>
+    <string name="exercises_option_1">A</string>
+    <string name="exercises_option_2">B</string>
+    <string name="exercises_option_3">C</string>
+    <string name="exercises_option_4">D</string>
+    <string name="exercises_option_5">E</string>
 </resources>
