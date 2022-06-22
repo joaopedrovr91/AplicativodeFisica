@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/specific_option_1"
+        android:id="@+id/specific_energy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@id/specific_title" />
 
     <Button
-        android:id="@+id/specific_option_2"
+        android:id="@+id/specific_mechanics"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
@@ -41,10 +41,10 @@
         android:textSize="@dimen/title_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/specific_option_1" />
+        app:layout_constraintTop_toBottomOf="@id/specific_energy" />
 
     <Button
-        android:id="@+id/specific_option_3"
+        android:id="@+id/specific_electricity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
@@ -53,10 +53,10 @@
         android:textSize="@dimen/title_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/specific_option_2" />
+        app:layout_constraintTop_toBottomOf="@id/specific_mechanics" />
 
     <Button
-        android:id="@+id/specific_option_4"
+        android:id="@+id/specific_optics"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
@@ -65,10 +65,10 @@
         android:textSize="@dimen/title_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/specific_option_3" />
+        app:layout_constraintTop_toBottomOf="@id/specific_electricity" />
 
     <Button
-        android:id="@+id/specific_option_5"
+        android:id="@+id/specific_thermophysics"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
@@ -77,10 +77,10 @@
         android:textSize="@dimen/title_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/specific_option_4" />
+        app:layout_constraintTop_toBottomOf="@id/specific_optics" />
 
     <Button
-        android:id="@+id/specific_option_6"
+        android:id="@+id/specific_newtons_laws"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
@@ -89,10 +89,10 @@
         android:textSize="@dimen/title_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/specific_option_5" />
+        app:layout_constraintTop_toBottomOf="@id/specific_thermophysics" />
 
     <Button
-        android:id="@+id/specific_option_7"
+        android:id="@+id/specific_currentsand_power"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
@@ -101,10 +101,10 @@
         android:textSize="@dimen/title_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/specific_option_6" />
+        app:layout_constraintTop_toBottomOf="@id/specific_newtons_laws" />
 
     <Button
-        android:id="@+id/specific_option_8"
+        android:id="@+id/specific_wave_phenomena"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
@@ -113,7 +113,7 @@
         android:textSize="@dimen/title_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/specific_option_7" />
+        app:layout_constraintTop_toBottomOf="@id/specific_currentsand_power" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

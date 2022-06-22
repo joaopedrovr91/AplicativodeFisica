@@ -3,12 +3,75 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainActivity">
+    app:startDestination="@id/selectionFragment">
 
     <fragment
-        android:id="@+id/mainActivity"
-        android:name="com.example.aplicativodefisica.presentation.MainActivity"
+        android:id="@+id/selectionFragment"
+        android:name="com.example.aplicativodefisica.presentation.SelectionFragment"
         android:label="fragment_selection"
-        tools:layout="@layout/fragment_selection" />
+        tools:layout="@layout/fragment_selection">
+
+        <action
+            android:id="@+id/action_selectionFragment_to_rulesFragment"
+            app:destination="@id/rulesFragment" />
+
+        <action
+            android:id="@+id/action_selectionFragment_to_specificFragment"
+            app:destination="@id/specificFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/specificFragment"
+        android:name="com.example.aplicativodefisica.presentation.SpecificFragment"
+        android:label="fragment_specific"
+        tools:layout="@layout/fragment_specific_content">
+
+        <action
+            android:id="@+id/action_specificFragment_to_rulesFragment"
+            app:destination="@id/rulesFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.example.aplicativodefisica.presentation.RulesFragment"
+        android:label="fragment_rules"
+        tools:layout="@layout/fragment_rules">
+
+        <action
+            android:id="@+id/action_rulesFragment_to_exercisesFragment"
+            app:destination="@id/exercisesFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/exercisesFragment"
+        android:name="com.example.aplicativodefisica.presentation.ExercisesFragment"
+        android:label="fragment_exercises"
+        tools:layout="@layout/fragment_exercises">
+
+        <action
+            android:id="@+id/action_rulesFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.example.aplicativodefisica.presentation.ResultsFragment"
+        android:label="fragment_results"
+        tools:layout="@layout/fragment_results">
+
+        <action
+            android:id="@+id/action_rulesFragment_to_exercisesFragment"
+            app:popUpTo="@id/selectionFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/selectionFragment" />
+
+    </fragment>
+
+
+
 
 </navigation>
