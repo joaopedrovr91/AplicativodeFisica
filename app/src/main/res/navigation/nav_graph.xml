@@ -10,4 +10,5 @@
         android:name="com.example.aplicativodefisica.presentation.MainActivity"
         android:label="fragment_selection"
         tools:layout="@layout/fragment_selection" />
+
 </navigation>
