@@ -10,13 +10,13 @@ apply plugin: 'kotlin-parcelize'
 apply from: '../config/detekt/detekt.gradle'
 
 android {
-    compileSdk 31
+    compileSdk 32
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.example.aplicativodefisica"
         minSdkVersion 23
-        targetSdkVersion 31
+        targetSdkVersion 32
         versionCode 1
         versionName "1.0"
 
