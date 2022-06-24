@@ -1,4 +1,4 @@
-package com.example.aplicativodefisica.presentation
+package com.example.aplicativodefisica.presentation.specific
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,8 +7,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.aplicativodefisica.databinding.FragmentSpecificContentBinding
+import com.example.aplicativodefisica.presentation.enum.TypeTest
+import dagger.hilt.android.AndroidEntryPoint
 
-//@AndroidEntryPoint
+@AndroidEntryPoint
 class SpecificFragment : Fragment() {
 
     private var binding: FragmentSpecificContentBinding? = null
@@ -26,35 +28,42 @@ class SpecificFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        observers()
+    }
+
+    private fun observers() {
         binding?.specificEnergy?.setOnClickListener {
-            direction("Energy")
+            direction(TypeTest.ENERGY)
         }
         binding?.specificMechanics?.setOnClickListener {
-            direction("Mechanics")
+            direction(TypeTest.MECHANICS)
         }
         binding?.specificElectricity?.setOnClickListener {
-            direction("Electricity")
+            direction(TypeTest.ELECTRICITY)
         }
         binding?.specificOptics?.setOnClickListener {
-            direction("Optics")
+            direction(TypeTest.OPTICS)
         }
         binding?.specificThermophysics?.setOnClickListener {
-            direction("Thermophysics")
+            direction(TypeTest.THERMOPHYSICS)
         }
         binding?.specificNewtonsLaws?.setOnClickListener {
-            direction("NewtonsLaws")
+            direction(TypeTest.NEWTONSLAWS)
         }
         binding?.specificCurrentsandPower?.setOnClickListener {
-            direction("CurrentsandPower")
+            direction(TypeTest.CURRENTSANDPOWER)
         }
         binding?.specificWavePhenomena?.setOnClickListener {
-            direction("WavePhenomena")
+            direction(TypeTest.WAVEPHENOMENA)
         }
     }
-    private fun direction(extra: String) {
-        val directions = SpecificFragmentDirections.actionSpecificFragmentToRulesFragment()
+
+    private fun direction(extra: TypeTest) {
+        val directions =
+            SpecificFragmentDirections.actionSpecificFragmentToRulesFragment(
+                extra.toString()
+            )
         findNavController().navigate(directions)
-        print(extra)
     }
 
     override fun onDestroyView() {

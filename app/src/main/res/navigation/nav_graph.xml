@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/selectionFragment"
-        android:name="com.example.aplicativodefisica.presentation.SelectionFragment"
+        android:name="com.example.aplicativodefisica.presentation.selection.SelectionFragment"
         android:label="fragment_selection"
         tools:layout="@layout/fragment_selection">
 
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/specificFragment"
-        android:name="com.example.aplicativodefisica.presentation.SpecificFragment"
+        android:name="com.example.aplicativodefisica.presentation.specific.SpecificFragment"
         android:label="fragment_specific"
         tools:layout="@layout/fragment_specific_content">
 
@@ -35,19 +35,23 @@
 
     <fragment
         android:id="@+id/rulesFragment"
-        android:name="com.example.aplicativodefisica.presentation.RulesFragment"
+        android:name="com.example.aplicativodefisica.presentation.rules.RulesFragment"
         android:label="fragment_rules"
         tools:layout="@layout/fragment_rules">
 
         <action
             android:id="@+id/action_rulesFragment_to_exercisesFragment"
-            app:destination="@id/exercisesFragment" />
+            app:destination="@id/exercisesFragment"/>
+
+        <argument
+            android:name="typeTest"
+            app:argType="string"/>
 
     </fragment>
 
     <fragment
         android:id="@+id/exercisesFragment"
-        android:name="com.example.aplicativodefisica.presentation.ExercisesFragment"
+        android:name="com.example.aplicativodefisica.presentation.exercises.ExercisesFragment"
         android:label="fragment_exercises"
         tools:layout="@layout/fragment_exercises">
 
@@ -55,11 +59,15 @@
             android:id="@+id/action_rulesFragment_to_resultsFragment"
             app:destination="@id/resultsFragment" />
 
+        <argument
+            android:name="typeTest"
+            app:argType="string"/>
+
     </fragment>
 
     <fragment
         android:id="@+id/resultsFragment"
-        android:name="com.example.aplicativodefisica.presentation.ResultsFragment"
+        android:name="com.example.aplicativodefisica.presentation.results.ResultsFragment"
         android:label="fragment_results"
         tools:layout="@layout/fragment_results">
 

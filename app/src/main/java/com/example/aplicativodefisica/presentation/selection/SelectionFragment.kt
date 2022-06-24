@@ -1,4 +1,4 @@
-package com.example.aplicativodefisica.presentation
+package com.example.aplicativodefisica.presentation.selection
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,8 +7,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.aplicativodefisica.databinding.FragmentSelectionBinding
+import com.example.aplicativodefisica.presentation.enum.TypeTest
+import dagger.hilt.android.AndroidEntryPoint
 
-//@AndroidEntryPoint
+@AndroidEntryPoint
 class SelectionFragment : Fragment() {
 
     private var binding: FragmentSelectionBinding? = null
@@ -26,12 +28,20 @@ class SelectionFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        observers()
+    }
+
+    private fun observers() {
         binding?.option1?.setOnClickListener {
-            val directions = SelectionFragmentDirections.actionSelectionFragmentToRulesFragment()
+            val directions =
+                SelectionFragmentDirections.actionSelectionFragmentToRulesFragment(
+                    TypeTest.GENERAL.toString()
+                )
             findNavController().navigate(directions)
         }
         binding?.option2?.setOnClickListener {
-            val directions = SelectionFragmentDirections.actionSelectionFragmentToSpecificFragment()
+            val directions =
+               SelectionFragmentDirections.actionSelectionFragmentToSpecificFragment()
             findNavController().navigate(directions)
         }
     }

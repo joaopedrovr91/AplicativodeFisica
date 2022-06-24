@@ -1,4 +1,4 @@
-package com.example.aplicativodefisica.presentation
+package com.example.aplicativodefisica.presentation.results
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,17 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.aplicativodefisica.databinding.FragmentRulesBinding
+import com.example.aplicativodefisica.databinding.FragmentResultsBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-//@AndroidEntryPoint
-class RulesFragment : Fragment() {
+@AndroidEntryPoint
+class ResultsFragment : Fragment() {
 
-    private var binding: FragmentRulesBinding? = null
+    private var binding: FragmentResultsBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ) = FragmentRulesBinding.inflate(
+    ) = FragmentResultsBinding.inflate(
         inflater,
         container,
         false
@@ -26,8 +27,14 @@ class RulesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding?.start?.setOnClickListener {
-            val directions = RulesFragmentDirections.actionRulesFragmentToExercisesFragment()
+        observers()
+
+    }
+
+    private fun observers() {
+        binding?.back?.setOnClickListener {
+            val directions =
+                ResultsFragmentDirections.actionRulesFragmentToExercisesFragment()
             findNavController().navigate(directions)
         }
     }
